@@ -1,0 +1,16 @@
+Note for #nativeandroid:
+
+To make your Android layouts look consistent on all screen sizes:
+
+Use ConstraintLayout with percent-based sizes (layout_constraintWidth_percent, layout_constraintHeight_percent) instead of fixed dp values.
+
+Calculate percent as:
+percent = (design_size / design_screen_size)
+Example: For a 157dp height in an 800dp design, use 157 ÷ 800 = 0.196.
+
+This makes your UI elements scale proportionally on any device, matching your original design (like from Figma).
+
+Avoid using fixed dp sizes for responsive layouts.
+
+Percent-based layouts ensure your app looks good on different phones without extra manual adjustments.
+
