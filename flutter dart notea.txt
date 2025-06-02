@@ -1,0 +1,3 @@
+mixin is a type of class can be used inside other class with out initialize or use constructor ,
+we can use mixin in other class by using "with" in new class 
+ex NewClassName with MixinName{}
